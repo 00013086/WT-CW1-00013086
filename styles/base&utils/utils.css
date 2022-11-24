@@ -1,0 +1,68 @@
+.container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* Typography  */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.light {
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.extrabold {
+  font-weight: 800;
+}
+
+.letter-space {
+  letter-spacing: 0.025em;
+}
+
+.letter-space-wide {
+  letter-spacing: 0.05em;
+}
+
+.letter-space-wider {
+  letter-spacing: 0.1em;
+}
+
+.letter-space-widest {
+  letter-spacing: 0.2em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+
+.padding-btm {
+  padding-bottom: 5rem;
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+.padding-top-wider {
+  padding-top: 10rem;
+}
+
