@@ -1,0 +1,40 @@
+.pagination {
+  margin-block: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  margin-inline: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.pagination__prev-next {
+  margin-inline: 1.6rem;
+  background-color: #5186e7;
+  color: var(--clr-white);
+}
+
+.pagination__prev-next:hover {
+  background-color: #376ac9;
+}
+
+.pagination__page-num {
+  background-color: var(--clr-black-06);
+  color: var(--clr-white);
+}
+
+.pagination__page-num:hover {
+  background-color: var(--clr-black);
+}
+
+.pagination__page-num--active {
+  background-color: var(--clr-black);
+}
+
+.pagination__page-num--active:hover {
+  background-color: var(--clr-black-06);
+}

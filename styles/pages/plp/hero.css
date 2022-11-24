@@ -1,0 +1,70 @@
+.hero {
+  height: 20rem;
+  background-image: url(../../../assets/images/hero-plp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero__title {
+  font-size: 4rem;
+  color: var(--clr-white);
+}
+
+.hero__text {
+  padding: 2.4rem;
+  padding-bottom: 0;
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--clr-white);
+  text-align: center;
+  font-size: var(--text-sm);
+}
+.tabs {
+  padding-block: 2.4rem;
+  margin-inline: auto;
+  max-width: 67rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.tabs__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.tabs__btn-icon {
+  margin-right: 0.8rem;
+}
+
+.tabs__btn:nth-of-type(2) {
+  padding-inline: 1.6rem;
+  border-inline: 1px solid var(--clr-black);
+}
+
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: 28.5rem;
+  }
+  .hero__text {
+    display: block;
+    max-width: 67.2rem;
+  }
+}

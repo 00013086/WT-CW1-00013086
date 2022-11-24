@@ -1,0 +1,53 @@
+.products__filters {
+  padding: 1.6rem;
+  position: absolute;
+  top: 4rem;
+  left: -100%;
+  width: 66%;
+  height: min-content;
+  z-index: 10;
+  background-color: var(--clr-white);
+  transition: left 0.3s ease-in-out;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.filter__header {
+  padding-block: 1.6rem;
+  border-bottom: 1px solid var(--clr-gray-light);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__list {
+  padding-block: 1.6rem;
+  list-style: none;
+  font-size: var(--text-base);
+}
+
+.filter__item {
+  padding-block: 0.8rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .products__filters {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .products__filters {
+    padding-inline: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products__filters {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

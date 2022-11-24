@@ -1,0 +1,20 @@
+/* Base & Utils  */
+@import url(../../base&utils/base.css);
+@import url(../../base&utils/custom-properties.css);
+@import url(../../base&utils/utils.css);
+@import url(../../base&utils/components.css);
+
+/* Sections */
+@import url(./hero.css);
+@import url(./filter.css);
+@import url(./products.css);
+@import url(./sort.css);
+@import url(./pagination.css);
+
+/* Global */
+@import url(../../global/navbar.css);
+@import url(../../global/footer.css);
+@import url(../../global/nav-modal.css);
+
+/* Reused */
+@import url(../home/arrivals.css);
