@@ -1,0 +1,130 @@
+.arrivals {
+  padding-inline: 1.6rem;
+  font-size: var(--text-sm);
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0.8rem;
+}
+.arrivals__text-block {
+  padding-block: 3.2rem;
+  border: 1px solid var(--clr-black);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.arrivals__subtitle {
+  margin-bottom: 0.8rem;
+  font-size: var(--text-base);
+}
+
+.arrivals__title {
+  margin-bottom: 1.8rem;
+}
+.arrivals__text {
+  margin-bottom: auto;
+}
+.arrivals__row {
+  width: 100%;
+}
+
+.arrivals__row > div {
+  max-height: 27rem;
+}
+
+.arrival {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--clr-black-06);
+  text-align: center;
+  position: relative;
+}
+
+.arrival__brand {
+  font-weight: bold;
+  color: var(--clr-black);
+}
+.arrival__img {
+  width: 80%;
+}
+
+.arrival__like {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.arrivals__next-arr {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+@media only screen and (min-width: 480px) {
+  .arrivals__row > div {
+    max-height: 35rem;
+  }
+
+  .arrivals__text-block {
+    padding-block: 4.8rem;
+  }
+
+  .arrivals__subtitle {
+    margin-bottom: 1.2rem;
+  }
+
+  .arrivals__title {
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .arrivals {
+    padding-inline: 3.2rem;
+  }
+  .arrivals__row > div {
+    max-height: 45rem;
+  }
+  .arrivals__text-block {
+    padding-inline: 3.2rem;
+    font-size: var(--text-base);
+  }
+  .arrivals__subtitle {
+    font-size: 2.4rem;
+  }
+  .arrivals__title {
+    font-size: 4rem;
+  }
+
+  .arrival {
+    font-size: var(--text-base);
+  }
+
+  .arrivals .arrivals__next-arr {
+    right: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .arrivals {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .arrivals {
+    grid-template-columns: 1fr 3fr;
+  }
+  .arrivals__row > div {
+    max-height: unset;
+  }
+}

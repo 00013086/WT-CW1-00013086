@@ -1,0 +1,117 @@
+.spring {
+  margin-block: 4rem;
+  padding-inline: 1.6rem;
+}
+
+.spring__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spring__title {
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.spring__banner-img {
+  width: 100%;
+}
+
+.spring .cta {
+  display: none;
+}
+
+.spring__products {
+  width: 100%;
+  position: relative;
+}
+
+.spring__prev-arr {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.spring__next-arr {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+@media only screen and (min-width: 480px) {
+  .spring__banner-img {
+    max-height: 50rem;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .spring {
+    padding-inline: 3.2rem;
+  }
+  .spring__subtitle {
+    font-size: var(--text-base);
+  }
+  .spring__title {
+    font-size: 3.2rem;
+  }
+  .spring__banner {
+    display: flex;
+    justify-content: center;
+  }
+  .spring__banner-img {
+    max-width: 60rem;
+    max-height: 60rem;
+  }
+  .spring__prev-arr {
+    left: 1.6rem;
+  }
+  .spring__next-arr {
+    right: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .spring {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 4rem;
+  }
+  .spring__header {
+    grid-column: 1 / -1;
+  }
+  .spring__products {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .spring__banner-img {
+    width: 100%;
+    max-width: unset;
+    object-fit: cover;
+  }
+  .spring .arrival__img {
+    max-height: 20rem;
+    object-fit: contain;
+  }
+  .spring .swiper-slide {
+    height: unset;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .spring {
+    grid-column-gap: 8rem;
+  }
+  .spring__banner-img {
+    max-height: unset;
+    height: 72rem;
+  }
+  .spring .arrival__img {
+    max-height: 28rem;
+    object-fit: contain;
+  }
+}
